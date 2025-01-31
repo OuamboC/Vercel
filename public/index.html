@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Wishlist</title>
+    <link rel="stylesheet" href="/public/styles.css">
+    <script defer src="/public/script.js"></script>
+</head>
+<body>
+    <h1>My Birthday Wishlist 🎁</h1>
+    <div class="wishlist" id="wishlist"></div>
+    <div class="address"> <h3>My Address</h3> 
+        <textarea id="address" readonly rows="4" cols="50" onclick="copyAddress()"> 
+        141 Chester Road 
+        Elizabeth Tower 
+        Flat 3503 
+        Manchester 
+        Greater Manchester
+         M15 4ZL 
+         United Kingdom 
+        </textarea> 
+            <button onclick="copyAddress()">
+                Copy Address
+            </button> 
+        </div> 
+    </div>
+</body>
+</html>

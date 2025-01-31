@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    background-color: #f8faf8;
+}
+.wishlist {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+.item:last-child {
+    border-bottom: none;
+}
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: #218838;
+}
+/* General styles for the address section */
+.address {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.address textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    resize: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.address button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.address button:hover {
+    background-color: #0056b3;
+}
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .address textarea {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .address button {
+        width: 100%;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .address textarea {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .address button {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
+@media (max-width: 600px) {
+    .item {
+        flex-direction: column;
+        text-align: left;
+    }
+    button {
+        margin-top: 5px;
+    }
+}
+.claimed {
+    background-color: red;
+    color: white;
+}
