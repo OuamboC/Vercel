@@ -1,5 +1,5 @@
 async function fetchWishlist() {
-    const response = await fetch('/wishlist'); // Correct endpoint
+    const response = await fetch('/api/wishlist'); // Use the correct endpoint for Vercel
     const data = await response.json();
     updateWishlist(data);
 }
@@ -27,7 +27,7 @@ function updateWishlist(items) {
 }
 
 async function claimItem(id) {
-    const response = await fetch('/claim', {
+    const response = await fetch('/api/wishlist', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
