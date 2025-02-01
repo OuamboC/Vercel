@@ -1,11 +1,33 @@
 async function fetchWishlist() {
-    const response = await fetch('/api/wishlist');
+    const response = await fetch('/wishlist'); // Correct endpoint
     const data = await response.json();
     updateWishlist(data);
 }
 
+function updateWishlist(items) {
+    const wishlistDiv = document.getElementById('wishlist');
+    wishlistDiv.innerHTML = '';
+    items.forEach(item => {
+        const itemDiv = document.createElement('div');
+        itemDiv.classList.add('item');
+        if (item.claimed) {
+            itemDiv.classList.add('claimed');
+            itemDiv.innerHTML = `
+                <span>${item.item} - ${item.price} <a href="${item.url}" target="_blank">${item.item}</a></span>
+                <button disabled>Claimed</button>
+            `;
+        } else {
+            itemDiv.innerHTML = `
+                <span>${item.item} - ${item.price} <a href="${item.url}" target="_blank">${item.item}</a></span>
+                <button onclick="claimItem(${item.id})">Claim</button>
+            `;
+        }
+        wishlistDiv.appendChild(itemDiv);
+    });
+}
+
 async function claimItem(id) {
-    const response = await fetch('/api/wishlist', {
+    const response = await fetch('/claim', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -15,13 +37,15 @@ async function claimItem(id) {
     const result = await response.json();
     if (result.success) {
         alert('Item claimed successfully.');
-        fetchWishlist();
+        fetchWishlist(); // Refresh the wishlist
     } else {
         alert('Failed to claim item.');
     }
 }
 
-//Function to copy the address to clipboard
+fetchWishlist(); // Fetch and display wishlist on page load
+
+// Function to copy the address to clipboard
 function copyAddress() {
     var addressField = document.getElementById("address");
 
