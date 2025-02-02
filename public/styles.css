@@ -1,7 +1,17 @@
+:root{
+    --base-color: white;
+    --base-variant: #e8e9ed;
+    --text-color: #111528;
+    --secondary-text: #232738;
+    --primary-color: #3a435d;
+    --accent-color: #0071ff;
+}
 body {
     font-family: 'Courier New', Courier, monospace; /* Monospaced font for a hacker feel */
-    background-color: #0d0d0d; /* Dark background */
-    color: #00ff00; /* Green text to mimic terminal */
+    /*background-color: #0d0d0d; /* Dark background */ 
+    background-color: var(--base-color);
+    /*color: #00ff00; /* Green text to mimic terminal */
+    color: var(--text-color);
     text-align: center;
     margin: 0;
     padding: 20px;
