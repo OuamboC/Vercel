@@ -22,7 +22,7 @@
     border-radius: 50%;
     background-color: var(--base-variant);
     display: flex;
-    justify-content: right ; /* Center align icons inside the circle */
+    justify-content: center ; /* Center align icons inside the circle */
     align-items: center;
     position: absolute;
     top: 10px;
