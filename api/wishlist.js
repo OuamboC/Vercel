@@ -5,8 +5,10 @@ module.exports = (req, res) => {
         { id: 3, item: 'Xbox Elite Series 2 Wireless Controller', price: '£149', url: 'https://www.xbox.com/en-GB/accessories/controllers/elite-wireless-controller-series-2', claimed: false },
         { id: 4, item: 'Dell 330W 7.4mm GaN Slim AC Adapter', price: '£146.08', url: 'https://www.dell.com/en-uk/shop/dell-330w-74mm-gan-slim-ac-adapter/apd/450-bcbx/pc-accessories', claimed: false },
         { id: 5, item: 'Bose SoundLink Flex Bluetooth® Speaker', price: '£119.95', url: 'https://www.bose.co.uk/en_gb/products/speakers/portable_speakers/soundlink-flex.html#v=soundlink_flex_black', claimed: false },
-        { id: 6, item: 'Stanley Classic Legendary Thermal Flask 1.9L', price: '£57.50', url: 'https://www.amazon.co.uk/Stanley-Classic-Legendary-Vacuum-Bottle/dp/B001EN21BS', claimed: false },
-        { id: 7, item: 'Igluu Meal Prep Glass Containers 10 Pack [Rectangle]', price: '£39.95', url: 'https://www.amazon.co.uk/gp/product/B07XJ68DCP/ref=ewc_pr_img_6?smid=A32PQL907CZRIA&th=1', claimed: false }
+        { id: 6, item: '4K HD Spy Camera WiFi Hidden Camera Clock', price: '£79.99', url: 'https://www.amazon.co.uk/gp/product/B0DN1GKXJG/ref=ox_sc_act_title_1?smid=A758J3OG2RWGJ&psc=1', claimed: false },
+        { id: 7, item: 'Stanley Classic Legendary Thermal Flask 1.9L', price: '£57.50', url: 'https://www.amazon.co.uk/Stanley-Classic-Legendary-Vacuum-Bottle/dp/B001EN21BS', claimed: false },
+        { id: 8, item: 'Igluu Meal Prep Glass Containers 10 Pack [Rectangle]', price: '£39.95', url: 'https://www.amazon.co.uk/gp/product/B07XJ68DCP/ref=ewc_pr_img_6?smid=A32PQL907CZRIA&th=1', claimed: false }
+        
     ];
 
     if (req.method === 'GET') {
