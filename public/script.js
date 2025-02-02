@@ -49,15 +49,16 @@ async function claimItem(id) {
                 itemDiv.querySelector('button').disabled = true;
                 itemDiv.querySelector('button').textContent = 'Claimed';
             }
+
+            // Refresh the wishlist to ensure consistency across sessions
+            fetchWishlist();
         } else {
             alert('Failed to claim item.');
         }
-        // Refresh the wishlist to ensure consistency across sessions
-        fetchWishlist();
     }
 }
 
-// Call fetchWishlist on page load to ensure items are updated
+// Fetch and display wishlist on page load
 fetchWishlist();
 
 // Function to copy the address to clipboard
