@@ -1,19 +1,19 @@
 :root {
-    --base-color: #F4F4F9; /* Soft white background */
-    --base-variant: #E8EAF6; /* Calm light blue-grey */
-    --text-color: #2E3A59; /* Relaxing dark slate blue text */
-    --secondary-text: #5A617A; /* Soft grey */
-    --primary-color: #8E99F3; /* Soothing pastel blue */
-    --accent-color: #FFC107; /* Warm amber for accent */
+    --base-color: #FFFFFF; /* White background */
+    --base-variant: #F0F0F0; /* Light grey */
+    --text-color: #333333; /* Dark grey text */
+    --secondary-text: #555555; /* Medium grey */
+    --primary-color: #4CAF50; /* Green */
+    --accent-color: #FF5722; /* Deep orange */
 }
 
 .darkmode {
-    --base-color: #1E1E1E; /* Dark background with a hint of grey */
-    --base-variant: #2E2E2E; /* Slightly lighter dark background */
-    --text-color: #C0C0C0; /* Light grey text for better readability */
-    --secondary-text: #A9A9A9; /* Medium grey for secondary text */
-    --primary-color: #00FF00; /* Terminal green for accents */
-    --accent-color: #1E90FF; /* Bright blue for accent elements */
+    --base-color: #121212; /* Dark background */
+    --base-variant: #1E1E1E; /* Darker grey */
+    --text-color: #E0E0E0; /* Light grey text */
+    --secondary-text: #A9A9A9; /* Medium grey */
+    --primary-color: #BB86FC; /* Soft purple */
+    --accent-color: #03DAC6; /* Teal accent */
 }
 
 #theme-switch {
@@ -62,7 +62,7 @@ header {
     justify-content: center; /* Center align the navigation */
     align-items: center;
     position: relative; /* Relative positioning for header */
-    border-bottom: 2px solid var(--accent-color); /* Bright blue border */
+    border-bottom: 2px solid var(--accent-color); /* Accent color border */
 }
 
 .main-nav {
@@ -99,7 +99,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    border-bottom: 1px solid var(--accent-color); /* Bright blue border */
+    border-bottom: 1px solid var(--accent-color); /* Accent color border */
 }
 
 .item:last-child {
@@ -107,7 +107,7 @@ header {
 }
 
 button {
-    background-color: var(--accent-color); /* Bright blue buttons */
+    background-color: var(--accent-color); /* Accent color buttons */
     color: white;
     border: none;
     padding: 5px 10px;
@@ -117,7 +117,7 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    background-color: #C34120; /* Darker accent color on hover */
     color: white;
 }
 
@@ -125,9 +125,9 @@ button:hover {
     max-width: 400px; /* Limit the width of the address div */
     margin: 20px auto; /* Center align with margin auto */
     padding: 15px;
-    border: 1px solid var(--accent-color); /* Bright blue border */
+    border: 1px solid var(--accent-color); /* Accent color border */
     border-radius: 8px;
-    background-color: var(--base-variant); /* Light grey background */
+    background-color: var(--base-variant); /* Background color */
 }
 
 .address textarea {
@@ -136,16 +136,16 @@ button:hover {
     font-size: 16px; /* Reduce font size for better fit */
     margin-bottom: 10px;
     resize: none;
-    border: 1px solid var(--accent-color); /* Bright blue border */
+    border: 1px solid var(--accent-color); /* Accent color border */
     border-radius: 5px;
     background-color: #fff; /* White background */
-    color: var(--text-color); /* Dark blue text */
+    color: var(--text-color); /* Dark text color */
 }
 
 .address button {
     padding: 8px 16px; /* Slightly smaller padding for the button */
     font-size: 14px; /* Reduce font size for better fit */
-    background-color: var(--accent-color); /* Bright blue button */
+    background-color: var(--accent-color); /* Accent color button */
     color: white;
     border: none;
     border-radius: 5px;
@@ -154,7 +154,7 @@ button:hover {
 }
 
 .address button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    background-color: #C34120; /* Darker accent color on hover */
     color: white;
 }
 
@@ -193,6 +193,6 @@ button:hover {
 }
 
 .claimed {
-    background-color: var(--accent-color); /* Bright blue for claimed items */
+    background-color: var(--accent-color); /* Accent color for claimed items */
     color: white;
 }
