@@ -8,12 +8,12 @@
 }
 
 .darkmode {
-    --base-color: #121212; /* Dark background */
-    --base-variant: #1C1C1C; /* Slightly lighter dark background */
-    --text-color: #00FF00; /* Green text to mimic terminal */
-    --secondary-text: #232738;
-    --primary-color: #3A435D;
-    --accent-color: #0071FF;
+    --base-color: #1E1E1E; /* Dark background with a hint of grey */
+    --base-variant: #2E2E2E; /* Slightly lighter dark background */
+    --text-color: #C0C0C0; /* Light grey text for better readability */
+    --secondary-text: #A9A9A9; /* Medium grey for secondary text */
+    --primary-color: #00FF00; /* Terminal green for accents */
+    --accent-color: #1E90FF; /* Bright blue for accent elements */
 }
 
 #theme-switch {
@@ -23,7 +23,7 @@
     border-radius: 50%;
     background-color: var(--base-variant);
     display: flex;
-    justify-content: center ; /* Center align icons inside the circle */
+    justify-content: center; /* Center align icons inside the circle */
     align-items: center;
     position: absolute;
     top: 10px;
@@ -32,17 +32,17 @@
     transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
 }
 
-#theme-switch svg{
+#theme-switch svg {
     fill: var(--primary-color);
 }
 
-#theme-switch svg:last-child{
+#theme-switch svg:last-child {
     display: none;
 }
-.darkmode #theme-switch svg:first-child{
+.darkmode #theme-switch svg:first-child {
     display: none;
 }
-.darkmode #theme-switch svg:last-child{
+.darkmode #theme-switch svg:last-child {
     display: block;
 }
 
@@ -166,7 +166,7 @@ button:hover {
 
     .address button {
         width: 100%;
-        font-size: 1px;
+        font-size: 12px;
     }
 }
 
