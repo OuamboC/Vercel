@@ -115,12 +115,12 @@ button:hover {
 @media (max-width: 768px) {
     .address textarea {
         width: 100%;
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .address button {
         width: 100%;
-        font-size: 12px;
+        font-size: 14px;
     }
 }
 
