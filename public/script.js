@@ -52,11 +52,13 @@ async function claimItem(id) {
         } else {
             alert('Failed to claim item.');
         }
+        // Refresh the wishlist to ensure consistency across sessions
+        fetchWishlist();
     }
 }
 
-
-fetchWishlist(); // Fetch and display wishlist on page load
+// Call fetchWishlist on page load to ensure items are updated
+fetchWishlist();
 
 // Function to copy the address to clipboard
 function copyAddress() {
@@ -100,8 +102,3 @@ themeSwitch.addEventListener("click", () => {
         disableDarkmode();
     }
 });
-
-
-
-
-
