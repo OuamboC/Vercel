@@ -77,21 +77,13 @@ async function claimItem(id) {
 }
 
 fetchWishlist(); // Fetch and display wishlist on page load
+
 // Function to copy the address to clipboard
 function copyAddress() {
-    const addressField = document.getElementById('address-text');
-
-    // Select the text field
-    addressField.select();
-    addressField.setSelectionRange(0, 99999); // For mobile devices
-
-    // Copy the text inside the text field
-    navigator.clipboard.writeText(addressField.value).then(() => {
-        alert("Address copied to clipboard!");
-    }).catch(err => {
-        console.error('Error copying address:', err);
-        alert("Failed to copy address.");
-    });
+    const address = document.querySelector('#address-text');
+    address.select();
+    document.execCommand('copy');
+    alert('Address copied to clipboard!');
 }
 
 
