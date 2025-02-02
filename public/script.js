@@ -69,12 +69,22 @@ async function claimItem(id) {
         const result = await response.json();
         if (result.success) {
             alert('Item claimed successfully.');
+
+            // Find the item div and add the claimed class
+            const itemDiv = document.querySelector(`.item[data-id='${id}']`);
+            if (itemDiv) {
+                itemDiv.classList.add('claimed');
+                itemDiv.querySelector('button').disabled = true;
+                itemDiv.querySelector('button').textContent = 'Claimed';
+            }
+
             fetchWishlist(); // Refresh the wishlist
         } else {
             alert('Failed to claim item.');
         }
     }
 }
+
 
 fetchWishlist(); // Fetch and display wishlist on page load
 
