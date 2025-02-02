@@ -1,79 +1,86 @@
-:root{
-    --base-color: white;
-    --base-variant: #e8e9ed;
-    --text-color: #111528;
-    --secondary-text: #232738;
-    --primary-color: #3a435d;
-    --accent-color: #0071ff;
+:root {
+    --base-color: #FFFFFF; /* White background */
+    --base-variant: #E8E9ED; /* Light grey */
+    --text-color: #111528; /* Dark blue text */
+    --secondary-text: #232738; /* Slate grey */
+    --primary-color: #3A435D; /* Deep blue */
+    --accent-color: #0071FF; /* Bright blue */
 }
-.darkmode{
+
+.darkmode {
     --base-color: #0d0d0d; /* Dark background */
     --base-variant: #1a1a1a; /* Slightly lighter dark background */
-    --text-color:  #00ff00; /* Green text to mimic terminal */
+    --text-color: #00ff00; /* Green text to mimic terminal */
     --secondary-text: #232738;
     --primary-color: #3a435d;
     --accent-color: #0071ff;
-
 }
+
 body {
-    font-family: 'Courier New', Courier, monospace; /* Monospaced font for a hacker feel */
-    /*background-color: #0d0d0d; /* Dark background */ 
     background-color: var(--base-color);
-    /*color: #00ff00; /* Green text to mimic terminal */
     color: var(--text-color);
+    font-family: 'Courier New', Courier, monospace; /* Monospaced font for a hacker feel */
     text-align: center;
     margin: 0;
     padding: 20px;
 }
+
 header {
-    background-color: #1a1a1a; /* Slightly lighter dark background for header */
-    color: #00ff00; /* Green text */
+    background-color: var(--base-variant);
+    color: var(--text-color);
     padding: 10px;
-    border-bottom: 2px solid #00ff00; /* Green border */
+    border-bottom: 2px solid var(--accent-color); /* Bright blue border */
 }
+
 .main-nav a {
-    color: #00ff00; /* Green links */
+    color: var(--accent-color);
     font-weight: bold;
     text-decoration: none;
 }
+
 .wishlist {
     max-width: 600px;
     margin: auto;
-    background: #1a1a1a; /* Dark background for wishlist */
+    background: var(--base-variant);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 255, 0, 0.1); /* Green shadow */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    color: var(--text-color);
 }
+
 .item {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    border-bottom: 1px solid #00ff00; /* Green border */
+    border-bottom: 1px solid var(--accent-color); /* Bright blue border */
 }
+
 .item:last-child {
     border-bottom: none;
 }
+
 button {
-    background-color: #00ff00; /* Green buttons */
-    color: black;
+    background-color: var(--accent-color); /* Bright blue buttons */
+    color: white;
     border: none;
     padding: 5px 10px;
     cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
+
 button:hover {
-    background-color: #009900; /* Darker green on hover */
+    background-color: #0056b3; /* Darker blue on hover */
     color: white;
 }
-/* General styles for the address section */
+
 .address {
     margin-top: 20px;
     padding: 15px;
-    border: 1px solid #00ff00; /* Green border */
+    border: 1px solid var(--accent-color); /* Bright blue border */
     border-radius: 8px;
-    background-color: #1a1a1a; /* Dark background */
+    background-color: var(--base-variant); /* Light grey background */
 }
 
 .address textarea {
@@ -82,17 +89,17 @@ button:hover {
     font-size: 16px;
     margin-bottom: 10px;
     resize: none;
-    border: 1px solid #00ff00; /* Green border */
+    border: 1px solid var(--accent-color); /* Bright blue border */
     border-radius: 5px;
-    background-color: #0d0d0d; /* Dark background */
-    color: #00ff00; /* Green text */
+    background-color: #fff; /* White background */
+    color: var(--text-color); /* Dark blue text */
 }
 
 .address button {
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #00ff00; /* Green button */
-    color: black;
+    background-color: var(--accent-color); /* Bright blue button */
+    color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -100,10 +107,10 @@ button:hover {
 }
 
 .address button:hover {
-    background-color: #009900; /* Darker green on hover */
+    background-color: #0056b3; /* Darker blue on hover */
     color: white;
 }
-/* Media queries for responsiveness */
+
 @media (max-width: 768px) {
     .address textarea {
         width: 100%;
@@ -139,6 +146,6 @@ button:hover {
 }
 
 .claimed {
-    background-color: #009900; /* Darker green for claimed items */
+    background-color: var(--accent-color); /* Bright blue for claimed items */
     color: white;
 }
