@@ -15,6 +15,16 @@
     --primary-color: #3a435d;
     --accent-color: #0071ff;
 }
+#theme-switch{
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: var(--base-variant);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 body {
     background-color: var(--base-color);
