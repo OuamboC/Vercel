@@ -31,7 +31,16 @@
     transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
 }
 
+#theme-switch svg{
+    fill: var(--primary-color);
+}
 
+#theme-switch svg:last-child{
+    display: none;
+}
+.darkmode #theme-switch svg:first-child{
+    display: none;
+}
 
 
 body {
