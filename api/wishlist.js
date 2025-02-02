@@ -11,7 +11,8 @@ module.exports = (req, res) => {
         { id: 8, item: 'Cracking the Coding Interview, 6th Edition', price: '£28.25',url: 'https://www.amazon.co.uk/Cracking-Coding-Interview-6th-Programming/dp/0984782850/ref=sr_1_5?crid=2G7OOO6M7PR8T&dib=eyJ2IjoiMSJ9.VOI2y7HYRxTFVgT0-Zl59gbQLqWldYS92FoKRCiewY6WsU77_jGz396_c4uIMuMp7vO5WoMk_lWEXk6Znzuc_HQ2JlMzZqiQtqL9Oz-rjoPLLA_0dsa1FOmCzd2tR57tlIPezXsw4MPPZEfsx9cgX2azKaiRJxTqKB1ryPfkhsJYRzVqW3ddJrqfc3MxAR8kD2h0xisG04VpXCgQEaos03nkLeL3t4ANUhxK9jP_oak.wuXszGL-rCr90Ey24aGmf4dkhZ8MU86Q9lSh6c_m0Fk&dib_tag=se&keywords=cracking+the+interview&qid=1738482099&sprefix=cracking+The+Interv%2Caps%2C71&sr=8-5', claimed:false},
         { id: 9, item: 'Igluu Meal Prep Glass Containers 10 Pack [Rectangle]', price: '£39.95', url: 'https://www.amazon.co.uk/gp/product/B07XJ68DCP/ref=ewc_pr_img_6?smid=A32PQL907CZRIA&th=1', claimed: false },
         { id: 10, item: 'Swimming Goggles', price: '£17.99', url: 'https://amzn.eu/d/bWJ6JbW', claimed: false},
-        { id: 11, item: 'Apron with Pocket Cooking', price: '£6.99', url: 'https://amzn.eu/d/dQ2zoLh', claimed: false }
+        { id: 11, item: 'Apron with Pocket Cooking', price: '£6.99', url: 'https://amzn.eu/d/dQ2zoLh', claimed: false },
+        { id: 12, item: 'Testing', price: '£0', url: 'https://amzn.eu/d/dQ2zoLh', claimed: false }
 
     ];
 
