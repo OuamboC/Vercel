@@ -38,11 +38,7 @@
 }
 
 
-#theme-switch svg{
-    fill: var(--primary-color);
-    font-size: 24px; /* Adjust icon size */
-    margin: 0 2px; /* Add margin to space out icons */
-}
+
 
 body {
     background-color: var(--base-color);
