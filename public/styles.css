@@ -6,19 +6,19 @@ body {
     background-color: #F5F5DC; /* Warm Beige background */
 }
 header {
-    background-color: #AEC6CF; /* Soft Blue header */
-    color: #003366;
+    background-color: #2C3E50; /* Dark Navy header */
+    color: #ECF0F1; /* Soft Gray text */
     padding: 10px;
 }
 .main-nav a {
-    color: #C2EABD; /* Pale Green links */
+    color: #1ABC9C; /* Teal links */
     font-weight: bold;
     text-decoration: none;
 }
 .wishlist {
     max-width: 600px;
     margin: auto;
-    background: white;
+    background: #ECF0F1; /* Soft Gray background */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -34,7 +34,7 @@ header {
     border-bottom: none;
 }
 button {
-    background-color: #C2EABD; /* Pale Green buttons */
+    background-color: #1ABC9C; /* Teal buttons */
     color: white;
     border: none;
     padding: 5px 10px;
@@ -42,7 +42,7 @@ button {
     border-radius: 5px;
 }
 button:hover {
-    background-color: #A0CEA5; /* Darker Pale Green on hover */
+    background-color: #16A085; /* Darker Teal on hover */
 }
 /* General styles for the address section */
 .address {
@@ -50,7 +50,7 @@ button:hover {
     padding: 15px;
     border: 1px solid #ddd;
     border-radius: 8px;
-    background-color: #F5C6C4; /* Light Coral background */
+    background-color: #ECF0F1; /* Soft Gray background */
 }
 
 .address textarea {
@@ -67,7 +67,7 @@ button:hover {
 .address button {
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #AEC6CF; /* Soft Blue button */
+    background-color: #2C3E50; /* Dark Navy button */
     color: white;
     border: none;
     border-radius: 5px;
@@ -75,7 +75,7 @@ button:hover {
 }
 
 .address button:hover {
-    background-color: #88AEB9; /* Darker Soft Blue on hover */
+    background-color: #1A2933; /* Darker Navy on hover */
 }
 /* Media queries for responsiveness */
 @media (max-width: 768px) {
@@ -113,6 +113,6 @@ button:hover {
 }
 
 .claimed {
-    background-color: #C2EABD; /* Pale Green for claimed items */
+    background-color: #1ABC9C; /* Teal for claimed items */
     color: white;
 }
