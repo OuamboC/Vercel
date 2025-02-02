@@ -59,3 +59,34 @@ function copyAddress() {
     // Optional: Alert the user that the address has been copied
     alert("Address copied to clipboard!");
 }
+
+// Retrieve the current dark mode status from local storage
+let darkmode = localStorage.getItem('darkmode');
+const themeSwitch = document.getElementById('theme-switch');
+
+// Function to enable dark mode
+const enableDarkmode = () => {
+    document.body.classList.add('darkmode'); // Add dark mode class to the body
+    localStorage.setItem('darkmode', 'active'); // Store the status in local storage
+};
+
+// Function to disable dark mode
+const disableDarkmode = () => {
+    document.body.classList.remove('darkmode'); // Remove dark mode class from the body
+    localStorage.setItem('darkmode', null); // Remove the status from local storage
+};
+
+// Apply dark mode if previously enabled
+if (darkmode === "active") enableDarkmode();
+
+// Add event listener to the theme switch button
+themeSwitch.addEventListener("click", () => {
+    darkmode = localStorage.getItem('darkmode'); // Refresh dark mode status
+    // Toggle dark mode based on current status
+    if (darkmode !== "active") {
+        enableDarkmode();
+    } else {
+        disableDarkmode();
+    }
+});
+
