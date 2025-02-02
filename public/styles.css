@@ -193,6 +193,6 @@ button:hover {
 }
 
 .claimed {
-    background-color: var(--accent-color); /* Accent color for claimed items */
+    background-color: red ;
     color: white;
 }

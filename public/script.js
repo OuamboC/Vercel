@@ -10,6 +10,8 @@ function updateWishlist(items) {
     items.forEach(item => {
         const itemDiv = document.createElement('div');
         itemDiv.classList.add('item');
+        itemDiv.setAttribute('data-id', item.id); // Add data-id attribute to each item
+
         if (item.claimed) {
             itemDiv.classList.add('claimed');
             itemDiv.innerHTML = `
@@ -27,19 +29,22 @@ function updateWishlist(items) {
 }
 
 async function claimItem(id) {
-    const response = await fetch('/api/wishlist', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({ id })
-    });
-    const result = await response.json();
-    if (result.success) {
-        alert('Item claimed successfully.');
-        fetchWishlist(); // Refresh the wishlist
-    } else {
-        alert('Failed to claim item.');
+    const confirmClaim = confirm('Do you want to offer this item?');
+    if (confirmClaim) {
+        const response = await fetch('/api/wishlist', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ id })
+        });
+        const result = await response.json();
+        if (result.success) {
+            alert('Item claimed successfully.');
+            fetchWishlist(); // Refresh the wishlist
+        } else {
+            alert('Failed to claim item.');
+        }
     }
 }
 
@@ -89,4 +94,3 @@ themeSwitch.addEventListener("click", () => {
         disableDarkmode();
     }
 });
-
