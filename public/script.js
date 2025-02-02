@@ -82,9 +82,15 @@ fetchWishlist(); // Fetch and display wishlist on page load
 function copyAddress() {
     const address = document.querySelector('#address-text');
     address.select();
-    document.execCommand('copy');
-    alert('Address copied to clipboard!');
+    address.setSelectionRange(0, 99999); // For mobile devices
+    navigator.clipboard.writeText(address.value).then(() => {
+        alert('Address copied to clipboard!');
+    }).catch(err => {
+        console.error('Error copying address:', err);
+        alert('Failed to copy address.');
+    });
 }
+
 
 
 
