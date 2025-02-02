@@ -3,7 +3,8 @@ body {
     text-align: center;
     margin: 0;
     padding: 20px;
-    background-color: #f8faf8;
+    /*background-color: #f8faf8; */
+    background-color: #FF0000;
 }
 .wishlist {
     max-width: 600px;
