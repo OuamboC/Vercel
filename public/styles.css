@@ -22,7 +22,7 @@
     border-radius: 50%;
     background-color: var(--base-variant);
     display: flex;
-    justify-content: center; /* Center align icons inside the circle */
+    justify-content: right ; /* Center align icons inside the circle */
     align-items: center;
     position: absolute;
     top: 10px;
@@ -37,7 +37,11 @@
     transform: scale(1.1); /* Slightly enlarge on hover */
 }
 
-
+#theme-switch svg{
+    fill: var(--primary-color);
+    font-size: 24px; /* Adjust icon size */
+    margin: 0 2px; /* Add margin to space out icons */
+}
 
 
 body {
