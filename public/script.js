@@ -1,7 +1,7 @@
 async function fetchWishlist() {
-    const response = await fetch('/api/wishlist'); // Use the correct endpoint for Vercel
-    const data = await response.json();
-    updateWishlist(data);
+    const response = await fetch('/api/wishlist');
+    const wishlist = await response.json();
+    updateWishlist(wishlist);
 }
 // Retrieve the current dark mode status from local storage
 let darkmode = localStorage.getItem('darkmode');
@@ -38,7 +38,7 @@ function updateWishlist(items) {
     items.forEach(item => {
         const itemDiv = document.createElement('div');
         itemDiv.classList.add('item');
-        itemDiv.setAttribute('data-id', item.id); // Add data-id attribute to each item
+        itemDiv.setAttribute('data-id', item.id);
 
         if (item.claimed) {
             itemDiv.classList.add('claimed');
@@ -78,7 +78,8 @@ async function claimItem(id) {
                 itemDiv.querySelector('button').textContent = 'Claimed';
             }
 
-            fetchWishlist(); // Refresh the wishlist
+            // Optionally, refresh the list after a short delay
+            setTimeout(fetchWishlist, 1000);
         } else {
             alert('Failed to claim item.');
         }
