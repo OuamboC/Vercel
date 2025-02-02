@@ -31,17 +31,7 @@
     transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
 }
 
-#theme-switch:hover {
-    background-color: var(--accent-color); /* Change background color on hover */
-    color: var(--base-color); /* Change icon color on hover */
-    transform: scale(1.1); /* Slightly enlarge on hover */
-}
 
-#theme-switch svg{
-    fill: var(--primary-color);
-    font-size: 24px; /* Adjust icon size */
-    margin: 0 2px; /* Add margin to space out icons */
-}
 
 
 body {
