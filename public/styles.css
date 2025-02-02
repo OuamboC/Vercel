@@ -76,7 +76,8 @@ button:hover {
 }
 
 .address {
-    margin-top: 20px;
+    max-width: 400px; /* Limit the width of the address div */
+    margin: 20px auto; /* Center align with margin auto */
     padding: 15px;
     border: 1px solid var(--accent-color); /* Bright blue border */
     border-radius: 8px;
@@ -86,7 +87,7 @@ button:hover {
 .address textarea {
     width: 100%;
     padding: 10px;
-    font-size: 16px;
+    font-size: 14px; /* Reduce font size for better fit */
     margin-bottom: 10px;
     resize: none;
     border: 1px solid var(--accent-color); /* Bright blue border */
@@ -96,8 +97,8 @@ button:hover {
 }
 
 .address button {
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 8px 16px; /* Slightly smaller padding for the button */
+    font-size: 14px; /* Reduce font size for better fit */
     background-color: var(--accent-color); /* Bright blue button */
     color: white;
     border: none;
@@ -114,23 +115,23 @@ button:hover {
 @media (max-width: 768px) {
     .address textarea {
         width: 100%;
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .address button {
         width: 100%;
-        font-size: 14px;
+        font-size: 12px;
     }
 }
 
 @media (max-width: 480px) {
     .address textarea {
-        font-size: 12px;
+        font-size: 10px;
         padding: 8px;
     }
 
     .address button {
-        font-size: 12px;
+        font-size: 10px;
         padding: 8px;
     }
 }
