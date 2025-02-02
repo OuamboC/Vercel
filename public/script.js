@@ -50,20 +50,7 @@ async function claimItem(id) {
 
 fetchWishlist(); // Fetch and display wishlist on page load
 
-// Function to copy the address to clipboard
-function copyAddress() {
-    var addressField = document.getElementById("address");
 
-    // Select the text field
-    addressField.select();
-    addressField.setSelectionRange(0, 99999); // For mobile devices
-
-    // Copy the text inside the text field
-    document.execCommand("copy");
-
-    // Optional: Alert the user that the address has been copied
-    alert("Address copied to clipboard!");
-}
 
 // Retrieve the current dark mode status from local storage
 let darkmode = localStorage.getItem('darkmode');
@@ -94,3 +81,17 @@ themeSwitch.addEventListener("click", () => {
         disableDarkmode();
     }
 });
+// Function to copy the address to clipboard
+function copyAddress() {
+    var addressField = document.getElementById("address");
+
+    // Select the text field
+    addressField.select();
+    addressField.setSelectionRange(0, 99999); // For mobile devices
+
+    // Copy the text inside the text field
+    document.execCommand("copy");
+
+    // Optional: Alert the user that the address has been copied
+    alert("Address copied to clipboard!");
+}
