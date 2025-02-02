@@ -83,15 +83,18 @@ themeSwitch.addEventListener("click", () => {
 });
 // Function to copy the address to clipboard
 function copyAddress() {
-    var addressField = document.getElementById("address");
+    const addressField = document.getElementById('address-text');
 
     // Select the text field
     addressField.select();
     addressField.setSelectionRange(0, 99999); // For mobile devices
 
     // Copy the text inside the text field
-    document.execCommand("copy");
-
-    // Optional: Alert the user that the address has been copied
-    alert("Address copied to clipboard!");
+    navigator.clipboard.writeText(addressField.value).then(() => {
+        alert("Address copied to clipboard!");
+    }).catch(err => {
+        console.error('Error copying address:', err);
+        alert("Failed to copy address.");
+    });
 }
+
