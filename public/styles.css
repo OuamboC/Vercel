@@ -6,6 +6,15 @@
     --primary-color: #3a435d;
     --accent-color: #0071ff;
 }
+.darkmode{
+    --base-color: #0d0d0d; /* Dark background */
+    --base-variant: #1a1a1a; /* Slightly lighter dark background */
+    --text-color:  #00ff00; /* Green text to mimic terminal */
+    --secondary-text: #232738;
+    --primary-color: #3a435d;
+    --accent-color: #0071ff;
+
+}
 body {
     font-family: 'Courier New', Courier, monospace; /* Monospaced font for a hacker feel */
     /*background-color: #0d0d0d; /* Dark background */ 
