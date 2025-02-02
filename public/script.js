@@ -49,13 +49,12 @@ async function claimItem(id) {
                 itemDiv.querySelector('button').disabled = true;
                 itemDiv.querySelector('button').textContent = 'Claimed';
             }
-
-            // Refresh the wishlist to ensure consistency across sessions
-            fetchWishlist();
         } else {
             alert('Failed to claim item.');
         }
-    
+    }
+}
+
 
 fetchWishlist(); // Fetch and display wishlist on page load
 
