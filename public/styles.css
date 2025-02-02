@@ -1,20 +1,21 @@
 :root {
-    --base-color: #FFFFFF; /* White background */
-    --base-variant: #E8E9ED; /* Light grey */
-    --text-color: #111528; /* Dark blue text */
-    --secondary-text: #232738; /* Slate grey */
-    --primary-color: #3A435D; /* Deep blue */
-    --accent-color: #0071FF; /* Bright blue */
+    --base-color: #F4F4F9; /* Soft white background */
+    --base-variant: #E8EAF6; /* Calm light blue-grey */
+    --text-color: #2E3A59; /* Relaxing dark slate blue text */
+    --secondary-text: #5A617A; /* Soft grey */
+    --primary-color: #8E99F3; /* Soothing pastel blue */
+    --accent-color: #FFC107; /* Warm amber for accent */
 }
 
 .darkmode {
-    --base-color: #0d0d0d; /* Dark background */
-    --base-variant: #1a1a1a; /* Slightly lighter dark background */
-    --text-color: #00ff00; /* Green text to mimic terminal */
+    --base-color: #121212; /* Dark background */
+    --base-variant: #1C1C1C; /* Slightly lighter dark background */
+    --text-color: #00FF00; /* Green text to mimic terminal */
     --secondary-text: #232738;
-    --primary-color: #3a435d;
-    --accent-color: #0071ff;
+    --primary-color: #3A435D;
+    --accent-color: #0071FF;
 }
+
 #theme-switch {
     height: 50px;
     width: 50px;
@@ -45,7 +46,6 @@
     display: block;
 }
 
-
 body {
     background-color: var(--base-color);
     color: var(--text-color);
@@ -64,13 +64,6 @@ header {
     position: relative; /* Relative positioning for header */
     border-bottom: 2px solid var(--accent-color); /* Bright blue border */
 }
- /*
- header {
-    background-color: var(--base-variant);
-    color: var(--text-color);
-    padding: 10px;
-    border-bottom: 2px solid var(--accent-color); /* Bright blue border */
-
 
 .main-nav {
     display: flex;
