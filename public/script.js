@@ -55,8 +55,8 @@ async function claimItem(id) {
     }
 }
 
-
 fetchWishlist(); // Fetch and display wishlist on page load
+
 
 // Function to copy the address to clipboard
 function copyAddress() {
