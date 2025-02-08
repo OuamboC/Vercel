@@ -6,7 +6,8 @@ let wishlist = [
     { id: 5, item: 'Dell 330W 7.4mm GaN Slim AC Adapter', price: '£146.08', url: 'https://www.dell.com/en-uk/shop/dell-330w-74mm-gan-slim-ac-adapter/apd/450-bcbx/pc-accessories', claimed: false },
     { id: 6, item: 'Bose SoundLink Flex Bluetooth® Speaker', price: '£119.95', url: 'https://www.bose.co.uk/en_gb/products/speakers/portable_speakers/soundlink-flex.html#v=soundlink_flex_black', claimed: false },
     { id: 7, item: '4K HD Spy Camera WiFi Hidden Camera Clock', price: '£79.99', url: 'https://www.amazon.co.uk/gp/product/B0DN1GKXJG/ref=ox_sc_act_title_1?smid=A758J3OG2RWGJ&psc=1', claimed: false },
-    { id: 8, item: 'Stanley Classic Legendary Thermal Flask 1.9L', price: '£57.50', url: 'https://www.amazon.co.uk/Stanley-Classic-Legendary-Vacuum-Bottle/dp/B001EN21BS', claimed: false }
+    { id: 8, item: 'Stanley Classic Legendary Thermal Flask 1.9L', price: '£57.50', url: 'https://www.amazon.co.uk/Stanley-Classic-Legendary-Vacuum-Bottle/dp/B001EN21BS', claimed: false },
+    { id: 9, item: 'Testing', price: '£1', url: 'https://www.tissotwatches.com/en-gb/T1294103626100.html', claimed: false }
 ];
 module.exports = (req, res) => {
    
